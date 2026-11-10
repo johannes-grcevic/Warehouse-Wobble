@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b27a99ab830bc3f46bdde7cd1f70d6df
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 389010
+  packageName: Modular Warehouse Environment Pack
+  packageVersion: 1.0
+  assetPath: Assets/300Mind/Modular Warehouse Environment Pack/Scene/Warehouse_Environment_Pack/LightingData.asset
+  uploadId: 941228
