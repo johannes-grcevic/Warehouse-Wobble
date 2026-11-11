@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.1590116
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -0.047982674
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.7144876
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
       propertyPath: m_LocalRotation.y
@@ -59,6 +59,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1180440770585962971}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8703884371255121398}
   m_SourcePrefab: {fileID: 100100000, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
 --- !u!1 &2009830432071504386 stripped
 GameObject:
@@ -87,3 +90,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3673673241375126878, guid: 367f83ebfa29b724c97288d6f90f4119, type: 3}
+--- !u!114 &8703884371255121398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009830432071504386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9434fd2815a8fbf4895a90e4e18a94bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UVScroll
+  materialIndex: 1
+  scrollSpeed: 0.5
+  scrollX: 0
+  scrollY: 1
+  reverse: 0
