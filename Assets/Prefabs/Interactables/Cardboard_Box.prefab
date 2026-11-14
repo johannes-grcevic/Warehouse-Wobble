@@ -170,3 +170,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   snapTag: Storage
   snapXOffset: 1.1
+  impactSound: {fileID: 8300000, guid: 5a6d323201732b54198bf15d72213d3b, type: 3}

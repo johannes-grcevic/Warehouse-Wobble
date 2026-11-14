@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 public class DragAndDrop : MonoBehaviour
 {
     [SerializeField] private string snapTag = "";
     [SerializeField] private float snapXOffset = 1.5f;
-    
+    [SerializeField] private AudioClip impactSound;
+
     private Camera mainCam;
     private Rigidbody rb;
     private Vector3 mouseFirstClickScreenPos;
+    private bool isDragging = false;
 
     private void Awake()
     {
@@ -30,11 +33,21 @@ public class DragAndDrop : MonoBehaviour
     {
         //Debug.DrawRay(transform.position, Vector3.right, Color.red);
         rb.Move(GetSnapPosition(snapTag, Vector3.right), Quaternion.identity);
+        isDragging = true;
     }
 
     private void OnMouseUp()
     {
         rb.Move(GetSnapPosition(snapTag, Vector3.right), Quaternion.identity);
+        isDragging = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (isDragging && !collision.transform.CompareTag(snapTag))
+        {
+            AudioSource.PlayClipAtPoint(impactSound, transform.position);
+        }
     }
 
     private Vector3 GetMouseWorldPosition()
