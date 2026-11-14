@@ -4,8 +4,8 @@ public class ObjectSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] spawnObjects;
     [SerializeField] private Transform spawnPoint;
-    [SerializeField] private float startSpawnDelay = 0.5f;
 
+    [SerializeField] private float startSpawnDelay = 0.5f;
     [SerializeField] private float repeatSpawnDelay = 1f;
     
     void Start()

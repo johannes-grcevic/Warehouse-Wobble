@@ -7,7 +7,6 @@ public class UVScroll : MonoBehaviour
 
     [SerializeField] private bool scrollX;
     [SerializeField] private bool scrollY;
-
     [SerializeField] private bool reverse = false;
 
     void Update()
